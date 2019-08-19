@@ -1,17 +1,11 @@
 /.bundle/
+/.yardoc
+/_yardoc/
 /coverage/
+/doc/
 /pkg/
 /spec/reports/
 /tmp/
 
-## Documentation cache and generated files:
-/.yardoc/
-/_yardoc/
-/doc/
-
-## Environment normalization:
-/.bundle/
-/vendor/bundle
-/lib/bundler/man/
-
+# rspec failure tracking
 .rspec_status

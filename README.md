@@ -4,9 +4,19 @@ Index data collected from Combine into Solr.
 
 ## Installation
 
-Execute
+Add this line to your application's Gemfile:
 
-    $ bundle install
+```ruby
+gem 'funnel_cake_index'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install funnel_cake_index
 
 ## Usage
 

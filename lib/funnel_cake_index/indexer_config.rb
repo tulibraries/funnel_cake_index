@@ -6,6 +6,7 @@
 $:.unshift "./config"
 $:.unshift "./lib"
 require "yaml"
+require "funnel_cake_index"
 
 solr_config = YAML.load_file("config/blacklight.yml")[(ENV["RAILS_ENV"] || "development")]
 solr_url = ERB.new(solr_config["url"]).result

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2019-08-15T20:30:55Z</responseDate>
+  <request verb="ListRecords">http://66.228.32.56/combine/oai</request>
+  <ListRecords>
+    <record>
+      <header>
+        <identifier>oai:funnel_cake:test_publish_1:oai:libcollab.temple.edu:dplapa:FCI_photo_1</identifier>
+        <datestamp>2019-08-15T20:30:55Z</datestamp>
+      </header>
+      <metadata>
+        <record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dpla="http://dp.la/about/map/" xmlns:schema="http://schema.org" xmlns:oai_qdc="http://worldcat.org/xmlschemas/qdc-1.0/">
+          <dcterms:title>Baseball team</dcterms:title>
+          <dcterms:description>Baseball team, 1890, Fredericksburg. - Schuylkill Seminary was established in Reading in 1881, moved to Fredericksburg in 1886, then returned to Reading in 1902. It was renamed Schuylkill College in 1923, and merged with Albright College in 1928.</dcterms:description>
+          <dcterms:spatial>Reading, Berks County, and Fredericksburg, Lebanon County, Pennsylvania</dcterms:spatial>
+          <dcterms:date>1890</dcterms:date>
+          <dcterms:subject>Baseball players</dcterms:subject>
+          <dcterms:subject>Baseball</dcterms:subject>
+          <dcterms:subject>Athletes</dcterms:subject>
+          <dcterms:subject>Sports</dcterms:subject>
+          <dcterms:type>Image</dcterms:type>
+          <dcterms:rights>U.S. and international copyright laws protect this digital image. Commercial use or distribution of the image is not permitted without prior permission of the copyright holder. Please contact the Albright College, Special Collections for permission to use the digital image.</dcterms:rights>
+          <schema:fileFormat>image/jpeg</schema:fileFormat>
+          <dcterms:identifier>dplapa:ALBRIGHT_sklsemphoto_38</dcterms:identifier>
+          <edm:isShownAt>http://digitalcollections.powerlibrary.org/cdm/ref/collection/sklsemphoto/id/38</edm:isShownAt>
+          <edm:preview>http://digitalcollections.powerlibrary.org/utils/getthumbnail/collection/sklsemphoto/id/38</edm:preview>
+          <dcterms:isPartOf>Albright College - Schuylkill Seminary Photo Collection</dcterms:isPartOf>
+          <edm:dataProvider>Albright College</edm:dataProvider>
+          <dpla:intermediateProvider>POWER Library as sponsor and HSLC as maintainer</dpla:intermediateProvider>
+          <edm:provider>PA Digital</edm:provider>
+        </record>
+      </metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>

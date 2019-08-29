@@ -42,4 +42,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "traject", "~> 3.1"
   spec.add_development_dependency "rsolr", "~> 2.2"
+
+  spec.add_development_dependency "rubocop", "~> 0.52"
+  spec.add_development_dependency "coveralls", "~> 0"
+
+  spec.add_development_dependency "binding_of_caller", "~> 0.7"
 end

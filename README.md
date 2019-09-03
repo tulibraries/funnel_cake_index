@@ -6,13 +6,15 @@ Index data collected from Combine into Solr.
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'funnel_cake_index'
-```
+    gem "funnel_cake_index", github: "tulibraries/funnel_cake_index"
 
-And then execute:
+To test with a development branch, add the branch name
 
-    $ bundle
+    gem "funnel_cake_index", github: "tulibraries/funnel_cake_index", branch "GIT_BRANCH_NAME"
+
+And then install the bundle:
+
+    $ bundle instsall
 
 Or install it yourself as:
 
@@ -22,8 +24,8 @@ Or install it yourself as:
 
 Ingest a file
 
-    $ exe/funnel_cake_index ingest /path/to/data.xml 
+    $ bundle_exec funnel_cake_index ingest /path/to/data.xml 
 
 or ingest a URL
 
-    $ exe/funnel_cake_index ingest http://CombineHarvester.url/combine/oai?verb=ListRecords&set=test_publish_1
+    $ bundle_exec funnel_cake_index ingest http://CombineHarvester.url/combine/oai?verb=ListRecords&set=test_publish_1

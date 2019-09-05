@@ -5,4 +5,6 @@ cache: bundler
 rvm:
   - 2.5.1
 before_install: gem install bundler -v 2.0.1
-after_install: bundle install funnel_cake_index
+install:
+  - gem build funnel_cake_index.gemspec
+  - gem install funnel_cake_index

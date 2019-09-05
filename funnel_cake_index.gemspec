@@ -40,11 +40,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency "traject", "~> 3.1"
   spec.add_dependency "library_stdnums", "~> 1.6"
   spec.add_dependency "gli", "~> 2.18"
+  spec.add_dependency "rsolr", "~> 2.2"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rsolr", "~> 2.2"
 
   spec.add_development_dependency "rubocop", "~> 0.52"
   spec.add_development_dependency "coveralls", "~> 0"

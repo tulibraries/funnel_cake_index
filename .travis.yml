@@ -8,7 +8,7 @@ before_install: gem install bundler -v 2.0.1
 
 after_install:
   - gem build funnel_cake_index.gemspec
-  - gem install funnel_cake_index
+  - gem install funnel_cake_index-*.gem
 
 script:
   - bundle exec rake

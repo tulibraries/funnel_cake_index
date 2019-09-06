@@ -18,13 +18,12 @@ class App
   arg_name "Combine URL endpoint or Combine file to ingest"
   command :ingest do |c|
     c.desc "Ingest files into SOLR_URL using funnel_cake traject config"
-    c.action do |global_options, options, args|
-
+    c.action do |_global_options, _options, _args|
       FunnelCakeIndex::CLI.ingest
     end
   end
 
-  pre do |global, command, options, args|
+  pre do |_global, _command, _options, _args|
     # Pre logic here
     # Return true to proceed; false to abort and not call the
     # chosen command
@@ -39,7 +38,7 @@ class App
     # block on that command only
   end
 
-  on_error do |exception|
+  on_error do |_exception|
     # Error logic here
     # return false to skip default error handling
     true

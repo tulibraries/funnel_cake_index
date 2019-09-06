@@ -6,7 +6,7 @@ require "traject"
 
 module FunnelCakeIndex
   module CLI
-    #class Error < StandardError; end
+    # class Error < StandardError; end
     def self.ingest
       indexer = Traject::Indexer::NokogiriIndexer.new("solr_writer.commit_on_close": true)
       indexer.load_config_file(File.join(File.dirname(__FILE__), "funnel_cake_index", "indexer_config.rb"))

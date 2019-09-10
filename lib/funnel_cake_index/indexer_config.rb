@@ -17,7 +17,7 @@ extend Traject::Macros::NokogiriMacros
 settings do
   provide "solr.version", "8.0.0"
   provide "solr_writer.max_skipped", -1
-  provide "solr_writer.commit_timeout", (15 * 60)
+  provide "solr_writer.commit_timeout", (20 * 60)
   provide "solr.url", solr_url
   provide "solr_writer.commit_on_close", "true"
 
@@ -34,6 +34,12 @@ settings do
 
   provide "nokogiri.each_record_xpath", "//oai:record"
   provide "nokogiri.strict_mode", "false"
+
+  if ENV["SOLR_AUTH_USER"] && ENV["SOLR_AUTH_PASSWORD"]
+    client = HTTPClient.new
+    client.set_auth(solr_url, ENV["SOLR_AUTH_USER"], ENV["SOLR_AUTH_PASSWORD"])
+    provide "solr_json_writer.http_client", client
+  end
 end
 
 # DPLA MAP

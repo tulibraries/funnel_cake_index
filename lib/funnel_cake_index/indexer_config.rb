@@ -44,7 +44,7 @@ end
 
 # DPLA MAP
 to_field "id", extract_xpath("//dcterms:identifier")
-to_field "alternativeTitle_tsim", extract_xpath("//dcterms:alternative")
+to_field "alternativeTitle_ssim", extract_xpath("//dcterms:alternative")
 to_field "collection_ssim", extract_xpath("//dcterms:isPartOf")
 to_field "contributor_ssim", extract_xpath("//dcterms:contributor")
 to_field "creator_ssim", extract_xpath("//dcterms:creator")
@@ -52,7 +52,6 @@ to_field "date_ssim", extract_xpath("//dcterms:date")
 to_field "description_tsim", extract_xpath("//dcterms:description")
 to_field "extent_ssim", extract_xpath("//dcterms:extent")
 to_field "format_ssim", extract_xpath("//dcterms:format")
-# to_field "identifier", extract_xpath("//dcterms:identifier")
 to_field "language_ssim", extract_xpath("//dcterms:language")
 to_field "spatial_ssim", extract_xpath("//dcterms:spatial")
 to_field "publisher_ssim", extract_xpath("//dcterms:publisher")
@@ -66,6 +65,7 @@ to_field "subject_ssim", extract_xpath("//dcterms:subject")
 to_field "genre_ssim", extract_xpath("//edm:hasType")
 to_field "temporalCoverage_ssim", extract_xpath("//dcterms:temporal")
 to_field "title_tsim", extract_xpath("//dcterms:title")
+to_field "title_ssim", extract_xpath("//dcterms:title")
 to_field "type_ssim", extract_xpath("//dcterms:type")
 
 # edm:WebResources

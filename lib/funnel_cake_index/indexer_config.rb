@@ -43,7 +43,7 @@ settings do
 end
 
 # DPLA MAP
-to_field "id", extract_xpath("//dcterms:identifier")
+to_field "id", extract_xpath("//dcterms:identifier"), first_only
 to_field "alternativeTitle_ssim", extract_xpath("//dcterms:alternative")
 to_field "collection_ssim", extract_xpath("//dcterms:isPartOf")
 to_field "contributor_ssim", extract_xpath("//dcterms:contributor")

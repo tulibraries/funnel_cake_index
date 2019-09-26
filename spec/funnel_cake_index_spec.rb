@@ -30,5 +30,9 @@ RSpec.describe FunnelCakeIndex do
     it "parses out the subjects" do
       expect(mapped_record["subject_ssim"]).to eq(["Baseball players", "Baseball", "Athletes", "Sports"])
     end
+
+    it "only returns a single record" do
+      expect(mapped_record["id"].size).to eq 1
+    end
   end
 end

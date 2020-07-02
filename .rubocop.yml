@@ -103,7 +103,7 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 # Detect hard tabs, no hard tabs.
-Layout/IndentationStyle`:
+Layout/IndentationStyle:
   Enabled: true
 
 # Blank lines should not have any spaces.

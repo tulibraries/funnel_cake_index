@@ -31,6 +31,7 @@ settings do
           "schema" => "http://schema.org",
           "oai_qdc" => "http://worldcat.org/xmlschemas/qdc-1.0/",
           "svcs" => "http://rdfs.org/sioc/services"
+          "padig" => "http://padigital.org/ns"
 
   provide "nokogiri.each_record_xpath", "//oai:record"
   provide "nokogiri.strict_mode", "false"
@@ -88,3 +89,4 @@ to_field "url_ssim", extract_xpath("//edm:isShownAt")
 to_field "intermediateProvider_ssim", extract_xpath("//dpla:intermediateProvider")
 to_field "preview_ssim", extract_xpath("//edm:preview")
 to_field "provider_ssim", extract_xpath("//edm:provider")
+to_field "mediaMaster_ssim", extract_xpath("//padig:mediaMaster")

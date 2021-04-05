@@ -30,7 +30,7 @@ settings do
           "dpla" => "http://dp.la/about/map/",
           "schema" => "http://schema.org",
           "oai_qdc" => "http://worldcat.org/xmlschemas/qdc-1.0/",
-          "svcs" => "http://rdfs.org/sioc/services"
+          "svcs" => "http://rdfs.org/sioc/services",
           "padig" => "http://padigital.org/ns"
 
   provide "nokogiri.each_record_xpath", "//oai:record"

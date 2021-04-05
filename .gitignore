@@ -6,7 +6,6 @@
 /pkg/
 /spec/reports/
 /tmp/
-Gemfile.lock
 funnel_cake_index-*.gem
 
 # rspec failure tracking

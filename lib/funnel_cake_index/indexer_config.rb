@@ -43,6 +43,10 @@ settings do
   end
 end
 
+# Map origional document.
+# We name the field this for consistency with oai_index gem.
+to_field "payload_ss", &-> (r, acc) { acc << r.root.to_xml }
+
 # DPLA MAP
 to_field "id", extract_xpath("//dcterms:identifier"), first_only
 to_field "alternativeTitle_ssim", extract_xpath("//dcterms:alternative")

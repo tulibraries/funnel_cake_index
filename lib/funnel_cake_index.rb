@@ -10,7 +10,7 @@ module FunnelCakeIndex
     def self.ingest
       indexer = Traject::Indexer::NokogiriIndexer.new("solr_writer.commit_on_close": true)
       indexer.load_config_file(File.join(File.dirname(__FILE__), "funnel_cake_index", "indexer_config.rb"))
-      open(ARGV[0]) do |f|
+      URI.open(ARGV[0]) do |f|
         indexer.process(f.read)
       end
     end

@@ -49,5 +49,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "coveralls", "~> 0"
   spec.add_development_dependency "rubocop", "~> 1.35"
 
-  spec.add_development_dependency "binding_of_caller", "~> 0.7"
+  spec.add_development_dependency "binding_of_caller", "~> 1.0"
 end

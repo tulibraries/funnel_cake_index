@@ -1,6 +1,8 @@
 # Funnel Cake Indexer
 
-Index data collected from Combine into Solr.
+Index PA Digital metadata into a Solr collection. This is designed to be used with the [Funnel Cake Blacklight application](https://github.com/tulibraries/funnel_cake).
+
+See also the [related Solr configuration files](https://github.com/tulibraries/funnel_cake_index).
 
 ## Installation
 

@@ -37,17 +37,18 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "gli", "~> 2.18"
-  spec.add_dependency "library_stdnums", "~> 1.6"
-  spec.add_dependency "rsolr", "~> 2.2"
-  spec.add_dependency "traject", "~> 3.1"
+  spec.add_dependency "gli"
+  spec.add_dependency "library_stdnums"
+  spec.add_dependency "rsolr"
+  spec.add_dependency "traject"
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 
-  spec.add_development_dependency "coveralls", "~> 0"
-  spec.add_development_dependency "rubocop", "~> 1.35"
+  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "rubocop"
 
-  spec.add_development_dependency "binding_of_caller", "~> 1.0"
+  spec.add_development_dependency "binding_of_caller"
+  spec.add_development_dependency "base64", "0.1.0"
 end

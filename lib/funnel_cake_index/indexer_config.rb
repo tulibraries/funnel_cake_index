@@ -94,3 +94,7 @@ to_field "intermediateProvider_ssim", extract_xpath("//dpla:intermediateProvider
 to_field "preview_ssim", extract_xpath("//edm:preview")
 to_field "provider_ssim", extract_xpath("//edm:provider")
 to_field "mediaMaster_ssim", extract_xpath("//padig:mediaMaster")
+
+# Case insensitive ID search
+
+to_field "id_tsi", extract_xpath("//dcterms:identifier")

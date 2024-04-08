@@ -97,4 +97,4 @@ to_field "mediaMaster_ssim", extract_xpath("//padig:mediaMaster")
 
 # Case insensitive ID search
 
-to_field "id_tsi", extract_xpath("//dcterms:identifier")
+to_field "id_tsim", extract_xpath("//dcterms:identifier")

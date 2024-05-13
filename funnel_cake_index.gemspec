@@ -50,5 +50,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop"
 
   spec.add_development_dependency "binding_of_caller"
-  spec.add_development_dependency "base64", "0.1.0"
+  spec.add_development_dependency "base64", "0.2.0"
 end

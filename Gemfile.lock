@@ -38,7 +38,7 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
-    gli (2.21.5)
+    gli (2.22.0)
     hashie (5.0.0)
     http (5.2.0)
       addressable (~> 2.8)

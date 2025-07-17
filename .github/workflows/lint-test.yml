@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
-      TZ: America/New_York
     steps:
       - uses: actions/checkout@v4
       - name: Setup Ruby

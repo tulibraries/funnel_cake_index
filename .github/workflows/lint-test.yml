@@ -2,10 +2,15 @@ name: Lint and Test
 
 on:
   push:
-    branches: [ main ]
+    branches-ignore:
+      - main
   pull_request:
-    types: [ opened, synchronize, reopened ]
+    types: [ opened, reopened, synchronize ]
     branches: [ main ]
+  workflow_dispatch: {}
+
+env:
+  RAILS_ENV: test
 
 jobs:
   lint:
@@ -14,8 +19,6 @@ jobs:
       fail-fast: true
       matrix:
         ruby-version: ['3.4']
-    env:
-      RAILS_ENV: test
     steps:
       - uses: actions/checkout@v4
       - name: Setup Ruby
@@ -33,8 +36,6 @@ jobs:
       fail-fast: true
       matrix:
         ruby-version: ['3.4']
-    env:
-      RAILS_ENV: test
     steps:
       - uses: actions/checkout@v4
       - name: Setup Ruby

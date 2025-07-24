@@ -41,6 +41,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "library_stdnums"
   spec.add_dependency "rsolr"
   spec.add_dependency "traject"
+  spec.add_dependency "base64"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"

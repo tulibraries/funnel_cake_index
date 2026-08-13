@@ -50,6 +50,7 @@ to_field "payload_ss", &-> (r, acc) { acc << r.root.to_xml }
 to_field "id", extract_xpath("//dcterms:identifier"), first_only
 to_field "alternativeTitle_ssim", extract_xpath("//dcterms:alternative")
 to_field "collection_ssim", extract_xpath("//dcterms:isPartOf")
+to_field "collection_tsim", extract_xpath("//dcterms:isPartOf")
 to_field "contributor_ssim", extract_xpath("//dcterms:contributor")
 to_field "creator_ssim", extract_xpath("//dcterms:creator")
 to_field "creator_tsim", extract_xpath("//dcterms:creator")

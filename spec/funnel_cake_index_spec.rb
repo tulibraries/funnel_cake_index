@@ -31,6 +31,11 @@ RSpec.describe FunnelCakeIndex do
       expect(mapped_record["subject_ssim"]).to eq(["Baseball players", "Baseball", "Athletes", "Sports"])
     end
 
+    it "maps collection for display and searching" do
+      expect(mapped_record["collection_ssim"]).to eq(["Albright College - Schuylkill Seminary Photo Collection"])
+      expect(mapped_record["collection_tsim"]).to eq(["Albright College - Schuylkill Seminary Photo Collection"])
+    end
+
     it "only returns a single record" do
       expect(mapped_record["id"].size).to eq 1
     end
